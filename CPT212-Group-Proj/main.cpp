@@ -15,6 +15,8 @@ using namespace std;
 int main()
 {
     Graph g;
+    
     g.print();
+  
     return 1;
 }

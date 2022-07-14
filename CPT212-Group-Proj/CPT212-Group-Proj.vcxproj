@@ -132,6 +132,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Graph.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CPT212-Group-Proj.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
