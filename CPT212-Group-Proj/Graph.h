@@ -7,11 +7,22 @@
 #include <string>
 #include <iostream>
 using namespace std;
+// City names array 
 const string CITY_NAMES[5] = { "Monaco, Monaco",
                                "Mostar, Bosnia and Herzegovina",
 							   "Madrid, Spain",
                                "Yerevan, Armenia",
                                "Boston, United States"};
+
+// Distances array from each vertex to the rest
+const int DISTANCES[5][5] = { {0,839,988,3066,6125},
+                              {839,0,1806,2232,6869},
+                              {988,1806,0,4036,5471},
+                              {3066,2232,4036,0,8783},
+                              {6125,6869,5471,8783,0} };
+
+
+
 struct node {
 	int num{};
 	int edgeLen{};
@@ -53,7 +64,7 @@ public:
 	void detectCycle();
 	void shortestPath(int start, int end);
 	void findMST(vector<int>& vertecies);
-	//function for debugging
+	//function to print the graph
 	void print();
 
 };
